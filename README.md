@@ -1,10 +1,10 @@
-# WesterosFlix
+# AstroFlix
 
 Rápida descrição do objetivo de fazer esse projeto
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **WesterosFlix**
+| :sparkles: Nome        | **AstroFlix**
 | :label: Tecnologias | Dart, Flutter (tecnologias utilizadas)
 | :rocket: URL         |
 | :fire: Desafio     | https://www.alura.com.br/challenges/mobile/semana-01-criando-app
