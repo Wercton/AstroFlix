@@ -10,11 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'AstroFlix',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
       home: HomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -25,14 +26,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   toolbarHeight: 86,
-      //   title: const Text("AstroFlix"),
-      //   centerTitle: true,
-      // ),
+      backgroundColor: const Color.fromARGB(255, 26, 26, 26),
       body: ListView(
         children: const [
-          PersonalAppBar("AstroFlix"),
+          PersonalAppBar("ASTROFLIX"),
           Destaque(),
           Video(),
           Video(),
@@ -58,13 +55,14 @@ class PersonalAppBar extends StatelessWidget {
           height: 86,
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 16),
+          padding: const EdgeInsets.only(bottom: 8),
           child: Text(
             title,
             style: const TextStyle(
               color: Color.fromARGB(255, 36, 120, 223),
-              fontSize: 26,
-              fontFamily: 'Bebas Neue',
+              fontSize: 32,
+              fontFamily: 'Bebas Neue', //TODO: importar fonte
+              fontWeight: FontWeight.w400,
             ),
           ),
         ),
@@ -78,9 +76,32 @@ class Destaque extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 138,
-      color: Colors.black12,
+    return Stack(
+      alignment: AlignmentDirectional.bottomCenter,
+      children: [
+        Container(
+          height: 138,
+          color: Colors.grey,
+        ),
+        Padding(
+          padding: const EdgeInsets.only(bottom: 21.15),
+          child: Container(
+            height: 42.31,
+            width: 128,
+            child: ElevatedButton(
+                onPressed: () {},
+                child: const Text(
+                  "Assista agora",
+                  style: TextStyle(
+                    //TODO: importar fonte Roboto
+                    fontSize: 17, // 18
+                    fontWeight: FontWeight.w400,
+                    //height: 21.09,
+                  ),
+                )),
+          ),
+        )
+      ],
     );
   }
 }
@@ -97,7 +118,10 @@ class Video extends StatelessWidget {
         children: [
           const Padding(
             padding: EdgeInsets.only(bottom: 8),
-            child: Text("Categoria"),
+            child: Text(
+              "Categoria",
+              style: TextStyle(color: Colors.white),
+            ),
           ),
           Container(
             color: Colors.pink,
