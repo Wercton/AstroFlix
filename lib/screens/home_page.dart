@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
           Video(),
           Video(),
           Video(),
+          SizedBox(height: 80)
         ],
       ),
       floatingActionButton:
