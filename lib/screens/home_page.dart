@@ -9,10 +9,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 26, 26, 26),
+        toolbarHeight: 86,
+        flexibleSpace: Container(
+          height: 90,
+          alignment: Alignment.bottomCenter,
+          child: const Text(
+            "ASTROFLIX",
+            style: TextStyle(
+              color: Color.fromARGB(255, 36, 120, 223),
+              fontSize: 32,
+              fontFamily: 'BebasNeue',
+            ),
+          ),
+        ),
+      ),
       backgroundColor: const Color.fromARGB(255, 26, 26, 26),
       body: ListView(
         children: const [
-          PersonalAppBar("ASTROFLIX"),
           Destaque(),
           Video(),
           Video(),
