@@ -18,9 +18,12 @@ class Video extends StatelessWidget {
             ),
           ),
           Container(
-            color: Colors.pink,
             width: 320,
             height: 180,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              color: Colors.pink,
+            ),
           ),
         ],
       ),

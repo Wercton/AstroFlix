@@ -20,7 +20,7 @@ class PersonalAppBar extends StatelessWidget {
             style: const TextStyle(
               color: Color.fromARGB(255, 36, 120, 223),
               fontSize: 32,
-              fontFamily: 'Bebas Neue', //TODO: importar fonte
+              fontFamily: 'BebasNeue',
               fontWeight: FontWeight.w400,
             ),
           ),

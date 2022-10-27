@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:westerosflix/screens/form_page.dart';
 import '../components/personal_appbar.dart';
 import '../components/destaque.dart';
 import '../components/video_card.dart';
@@ -36,8 +37,16 @@ class HomePage extends StatelessWidget {
           SizedBox(height: 80)
         ],
       ),
-      floatingActionButton:
-          FloatingActionButton(onPressed: () {}, child: const Icon(Icons.add)),
+      floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const FormPage(),
+              ),
+            );
+          },
+          child: const Icon(Icons.add)),
     );
   }
 }

@@ -14,7 +14,7 @@ class Destaque extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.only(bottom: 21.15),
-          child: Container(
+          child: SizedBox(
             height: 42.31,
             width: 128,
             child: ElevatedButton(

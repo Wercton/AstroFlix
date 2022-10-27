@@ -185,6 +185,7 @@ class _VideoFormState extends State<VideoForm> {
                               ),
                             ),
                           );
+                          Navigator.pop(context);
                         }
                         //print(urlController.text);
                       },
